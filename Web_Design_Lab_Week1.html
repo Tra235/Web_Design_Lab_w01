@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class Timetable</title>
+</head>
+<Style>
+body {
+    font-family: "Times New Roman", serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 14px;
+}
+
+th {
+    background: #0b2c5d;
+    color: white;
+}
+
+.time {
+    width: 120px;
+    font-weight: bold;
+}
+
+.break {
+    background: #ffc000;
+    font-weight: bold;
+}
+
+.lunch {
+    background: #ffc000;
+    font-weight: bold;
+}
+
+.seminar {
+    background: #083d56;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subject {
+    font-weight: bold;
+}
+
+.teacher {
+    color: red;
+    font-weight: bold;
+}
+
+.room {
+    font-size: 12px;}
+</Style>
+<body>
+
+<h2>TIMETABLE 2025 - 2026</h2>
+<h3>Department of Telecommunications and Networking</h3>
+<h3>Specialize in Cybersecurity</h3>
+
+<table border="1" width="80%" style="border-collapse: collapse;">
+
+<!-- HEADER -->
+<tr>
+    <th class="time">Time</th>
+    <th colspan="2">Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th colspan="2">Thursday</th>
+    <th colspan="2">Friday</th>
+</tr>
+
+<!-- NATIONAL ANTHEM -->
+<tr>
+    <td class="time">07:50 - 08:00</td>
+    <td colspan="8" class="break">National Anthem</td>
+</tr>
+
+<!-- ROW 1 -->
+<tr>
+    <td class="time">08:00 - 09:30</td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G1 - A207</div>
+    </td>
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Lab G2 - A112</div>
+    </td>
+
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Theory(G1+G2) - A112</div>
+    </td>
+    <td rowspan="3" class="seminar">Weekly Seminar</td>
+
+    <td>
+        <div class="subject">Web Development</div>
+        <div class="teacher">Lect. Chhoun Sopheakmanith</div>
+        <div class="room">Lab G1 - A007</div>
+    </td>
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Lab G1 - A207</div>
+    </td>
+
+    <td>
+        <div class="subject">Enterprise Networking<br>Security and Automation</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Lab G2 - A114</div>
+    </td>
+    <td>
+        <div></div>
+        <div></div>
+        <div></div>
+    </td>
+</tr>
+
+<!-- BREAK -->
+<tr>
+    <td class="time">09:30 - 09:50</td>
+    <td colspan="2" class="break">Break (15 mins)</td>
+    <td colspan="1" class="break">Break (15 mins)</td>
+    <td colspan="2" class="break">Break (15 mins)</td>
+    <td colspan="2" class="break">Break (15 mins)</td>
+</tr>
+
+<!-- ROW 2 -->
+<tr>
+    <td class="time">09:50 - 11:20</td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G1 - A207</div>
+    </td>
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Lab G2 - A112</div>
+    </td>
+
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Theory(G1+G2) - A102</div>
+    </td>
+
+    <td>
+        <div class="subject">Web Development</div>
+        <div class="teacher">Lect. Chhoun Sopheakmanith</div>
+        <div class="room">Lab G1 - A007</div>
+    </td>
+
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Lab G2 - A207</div>
+    </td>
+    <td>
+        <div class="subject">Enterprise Networking<br>Security and Automation<</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Lab G2 - A114</div>
+    </td>
+
+    <td>
+        <div></div>
+        <div></div>
+        <div></div>
+    </td>
+    
+</tr>
+
+<!-- LUNCH -->
+<tr>
+    <td class="time">11:20 - 12:10</td>
+    <td colspan="8" class="lunch">Lunch Break</td>
+</tr>
+
+<!-- AFTERNOON SAMPLE ROW -->
+<tr>
+    <td class="time">12:10 - 13:40</td>
+    <td>
+        <div></div>
+        <div></div>
+        <div></div>
+    </td>
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Lab G1 - A112</div>
+    </td>
+
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Theory(G1+G2) - A102</div>
+    </td>
+
+    <td>
+        <div class="subject">Web Development</div>
+        <div class="teacher">Lect. Chhoun Sopheakmanith</div>
+        <div class="room">Theory(G1+G2) - A102</div>
+    </td>
+
+    <td>
+       <div></div>
+       <div></div>
+       <div></div>
+    </td>
+    <td>
+       <div></div>
+       <div></div>
+       <div></div>
+    </td>
+
+    <td>
+       <div></div>
+       <div></div>
+       <div></div>
+    </td>
+    <td>
+       <div></div>
+       <div></div>
+       <div></div>
+    </td>
+</tr>
+<tr>
+    <td class="time">13:40 - 13:50</td>
+    <td colspan="8" class="break">Break (15 mins)</td>
+</tr>
+
+<!-- AFTERNOON SAMPLE ROW -->
+<tr>
+    <td class="time">13:50 - 15:20</td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G2 - A007</div>
+    </td>
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Lab G1 - A112</div>
+    </td>
+
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Theory(G1+G2) - A102</div>
+    </td>
+
+    <td>
+        <div class="subject">Enterprise Networking</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Theory(G1+G2) - A102</div>
+    </td>
+
+    <td>
+        <div class="subject">Web Development</div>
+        <div class="teacher">Lect. Chhoun Sopheakmanith</div>
+        <div class="room">Lab G2 - A207</div>
+    </td>
+    <td>
+        <div class="subject">Enterprise Networking</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Lab G1 - A114</div>
+    </td>
+
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Lab G1 - A007</div>
+    </td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G1 - A207</div>
+    </td>
+</tr>
+<tr>
+    <td class="time">11:20 - 12:10</td>
+    <td colspan="8" class="break">Break (15 mins)</td>
+</tr>
+
+<!-- AFTERNOON SAMPLE ROW -->
+<tr>
+    <td class="time">13:50 - 15:20</td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G2 - A007</div>
+    </td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G1 - A207</div>
+    </td>
+
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Lab G1 - A112</div>
+    </td>
+
+    <td>
+        <div class="subject">Enterprise Networking</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Theory - A102</div>
+    </td>
+
+    <td>
+        <div class="subject">Web Development</div>
+        <div class="teacher">Lect. Chhoun Sopheakmanith</div>
+        <div class="room">Lab G2 - A207</div>
+    </td>
+    <td>
+        <div class="subject">Enterprise Networking</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Theory - A102</div>
+    </td>
+
+    <td>
+        <div></div>
+        <div></div>
+        <div></div>
+    </td>
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Lab G1 - A007</div>
+    </td>
+</tr>
+<tr>
+    <td class="time">15:30 - 17:00</td>
+    <td>
+        <div class="subject">Operating System</div>
+        <div class="teacher">Lect. Heng Rathpisey</div>
+        <div class="room">Lab G2 - A007</div>
+    </td>
+    <td>
+        <div></div>
+        <div></div>
+        <div></div>
+    </td>
+
+    <td>
+        <div class="subject">Data Communications</div>
+        <div class="teacher">Lect. Chea Socheat</div>
+        <div class="room">Lab G1 - A112</div>
+    </td>
+
+    <td>
+        <div class="subject">Enterprise Networking</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Theory - A102</div>
+    </td>
+
+    <td>
+        <div class="subject">Web Development</div>
+        <div class="teacher">Lect. Chhoun Sopheakmanith</div>
+        <div class="room">Lab G2 - A207</div>
+    </td>
+    <td>
+        <div class="subject">Enterprise Networking</div>
+        <div class="teacher">Lect. Chhit Sokna</div>
+        <div class="room">Theory - A102</div>
+    </td>
+
+    <td>
+        <div></div>
+        <div></div>
+        <div></div>
+    </td>
+    <td>
+        <div class="subject">System Administration</div>
+        <div class="teacher">Lect. Vann Khema</div>
+        <div class="room">Lab G1 - A007</div>
+    </td>
+</tr>
+
+</table>
+
+</body>
+</html
